@@ -1,0 +1,92 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre tout le contenu de l'application */
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Affichage vertical */
+  align-items: center;
+  gap: 20px; /* Espacement entre les sections */
+  width: 100%; /* Prend tout l'espace horizontal */
+  max-width: 1200px; /* Limite la largeur totale */
+}
+
+.class-creation, .relationship-creation, .diagram {
+  width: 100%;
+  max-width: 400px; /* Largeur maximale pour chaque section */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Largeur complète pour les boutons */
+  margin-top: 10px; /* Espacement entre le contenu et le bouton */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Spécifique pour le diagramme, centrer la zone du diagramme */
+#diagram-canvas {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px; /* Hauteur définie pour le diagramme */
+  background-color: #f4f7f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px; /* Limite la largeur totale */
+}
+
+.relationship-creation, .class-creation {
+  width: 100%;
+  max-width: 600px; /* Largeur des zones de création */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
